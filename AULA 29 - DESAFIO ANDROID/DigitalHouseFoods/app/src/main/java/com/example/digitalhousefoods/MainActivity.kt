@@ -31,6 +31,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fazerLogin() {
+
+        /* Get input text from material
+        val inputText = filledTextField.editText?.text.toString()
+
+        filledTextField.editText?.doOnTextChanged { inputText, _, _, _ ->
+            // Respond to input text change
+        }*/
+
+
+
+
         btnLogin.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)

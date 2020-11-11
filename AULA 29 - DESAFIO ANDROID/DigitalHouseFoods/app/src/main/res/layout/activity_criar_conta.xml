@@ -6,71 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".CriarConta"
     android:orientation="vertical"
-    android:background="@color/colorWhite">
+    android:background="@color/colorWhite"
+    android:padding="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif"
-        android:text="SIGN UP"
-        android:textColor="@color/colorPrimary"
-        android:textSize="34sp"
-        android:layout_marginTop="80dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-light"
-        android:text="FOR YOUR ACCOUNT"
-        android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
-        android:letterSpacing="0.3"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingEnd="40dp"
-        android:paddingStart="40dp"
-        android:layout_gravity="center|center_vertical">
-
-        <EditText
-            android:id="@+id/editTextNome"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextCriarNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="name"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/colorPrimary"
-            android:textColorHint="@color/colorPrimary" />
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="email"
+            android:hint="Name"
             android:singleLine="true"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_marginTop="20dp"/>
+            android:backgroundTint="@color/colorPrimary">
 
-        <EditText
-            android:id="@+id/editTextSenha"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextCriarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextCriarSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword"
             android:textColorHint="@color/colorPrimary"
-            android:backgroundTint="@color/colorPrimary"
-            android:textColor="@color/colorWhite"
-            android:layout_marginTop="20dp"/>
+            android:backgroundTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextCriarSenhaRepetir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeate Password"
+        android:textColorHint="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
         <CheckBox
             android:id="@+id/checkCerteza"
@@ -85,25 +85,13 @@
             android:id="@+id/btnSignUp"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:textColor="@color/colorWhite"
             android:layout_gravity="center"
-            android:text="SIGN UP"
+            android:text="REGISTER"
             android:textSize="16sp"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorOrange"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:layout_marginTop="50dp"
             android:enabled="false"
             />
-
-        <Button
-            android:id="@+id/btnVoltarLogIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:textColor="@color/colorPrimary"
-            android:text="LOG IN"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
 
 </LinearLayout>
