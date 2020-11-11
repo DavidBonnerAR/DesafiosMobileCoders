@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 class RestaurantesViewHolder(view: View): RecyclerView.ViewHolder(view) {
     private val nome: TextView = view.findViewById(R.id.txtNomeRestaurante)
 
-    fun bind(nomeChat: String){
-        nome.text = nomeChat
+    fun bind(nomerRestaurante: String){
+        nome.text = nomerRestaurante
     }
 }

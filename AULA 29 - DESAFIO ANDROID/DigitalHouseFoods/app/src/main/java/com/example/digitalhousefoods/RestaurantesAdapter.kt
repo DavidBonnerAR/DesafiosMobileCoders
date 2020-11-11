@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class RestaurantesAdapter(private val dataSet: List<Restaurantes>, private val listener: (Restaurantes) -> Unit): RecyclerView.Adapter<RestaurantesViewHolder>() {
+class RestaurantesAdapter(private val dataSet: List<Restaurante>, private val listener: (Restaurante) -> Unit): RecyclerView.Adapter<RestaurantesViewHolder>() {
 
     //Usar xml como item de linha
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantesViewHolder {
