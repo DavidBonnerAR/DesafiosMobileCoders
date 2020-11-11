@@ -12,8 +12,17 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val meusRestaurantes = arrayListOf(Restaurantes("Corujão Lanches"), Restaurantes("Regis Lanches"))
-        val viewAdapter = ResturantesAdapter(meusRestaurantes)
+        val meusRestaurantes = arrayListOf(
+            Restaurantes("Corujão Lanches"),
+            Restaurantes("Regis Lanches"),
+            Restaurantes("Xerifes Burguer"),
+            Restaurantes("Cabana do Sol")
+        )
+        val viewAdapter = RestaurantesAdapter(meusRestaurantes){
+            var intent = Intent(this@HomeActivity, RestauranteDetalhes::class.java)
+            intent.putExtra("NOME", it.nome)
+            startActivity(intent)
+        }
         val viewManager = LinearLayoutManager(this)
         val recyclerView = findViewById<RecyclerView>(R.id.listaRestaurantes)
 

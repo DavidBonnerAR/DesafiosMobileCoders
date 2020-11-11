@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class ResturantesAdapter(private val dataSet: List<Restaurantes>): RecyclerView.Adapter<RestaurantesViewHolder>() {
+class RestaurantesAdapter(private val dataSet: List<Restaurantes>, private val listener: (Restaurantes) -> Unit): RecyclerView.Adapter<RestaurantesViewHolder>() {
 
     //Usar xml como item de linha
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantesViewHolder {
@@ -18,5 +18,6 @@ class ResturantesAdapter(private val dataSet: List<Restaurantes>): RecyclerView.
     //Quando chegar elemento novo, chamar para cada elemento
     override fun onBindViewHolder(holder: RestaurantesViewHolder, position: Int) {
         holder.bind(dataSet[position].nome)
+        holder.itemView.setOnClickListener { listener(dataSet[position]) }
     }
 }
