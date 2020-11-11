@@ -72,14 +72,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-        <CheckBox
-            android:id="@+id/checkCerteza"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="18dp"
-            android:text="I have read and agree the Privacy Policy"
-            android:textColor="@color/colorPrimary"/>
 
         <Button
             android:id="@+id/btnSignUp"
@@ -88,10 +80,10 @@
             android:layout_gravity="center"
             android:text="REGISTER"
             android:textSize="16sp"
+            android:textColor="@color/colorWhite"
             android:background="@color/colorOrange"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:layout_marginTop="50dp"
-            android:enabled="false"
             />
 
 </LinearLayout>

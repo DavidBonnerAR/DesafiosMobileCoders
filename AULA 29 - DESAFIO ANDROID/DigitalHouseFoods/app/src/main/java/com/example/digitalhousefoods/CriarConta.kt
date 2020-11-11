@@ -19,6 +19,9 @@ class CriarConta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_criar_conta)
 
+        val actionBar = getSupportActionBar()
+        actionBar?.title =  "REGISTER"
+
         registrarConta()
 
 
@@ -28,14 +31,6 @@ class CriarConta : AppCompatActivity() {
 
     }
     private fun registrarConta() {
-        checkCerteza.setOnCheckedChangeListener { _, isChecked ->
-            btnSignUp.isEnabled = true
-        }
-        /*checkCerteza.setOnCheckedChangeListener { _, notChecked ->
-            btnSignUp.isEnabled = false
-        }*/
-
-
         btnSignUp.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)

@@ -29,7 +29,7 @@
             android:id="@+id/editTextSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Passwaord"
+            android:hint="Password"
             android:textColorHint="@color/colorPrimary"
             android:backgroundTint="@color/colorPrimary">
 

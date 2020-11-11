@@ -6,4 +6,7 @@
     <color name="colorWhite">#ffff</color>
     <color name="colorOrange">#FF5252</color>
     <color name="colorCinzabtn">#8492A6</color>
+    <color name="colorCinzaFundo">#DDDDDD</color>
+    <color name="colorCinzaFonte">#8492A6</color>
+    <color name="colorPretoFonte">#1F2D3D</color>
 </resources>
