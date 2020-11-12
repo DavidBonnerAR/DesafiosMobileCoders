@@ -39,9 +39,6 @@ class MainActivity : AppCompatActivity() {
             // Respond to input text change
         }*/
 
-
-
-
         btnLogin.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
