@@ -16,12 +16,13 @@
             android:layout_height="wrap_content"
             android:hint="Name"
             android:singleLine="true"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorCinzaFonte"
             android:backgroundTint="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,13 +32,14 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:singleLine="true"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorCinzaFonte"
             android:backgroundTint="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,13 +48,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorCinzaFonte"
             android:backgroundTint="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,13 +64,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Repeate Password"
-        android:textColorHint="@color/colorPrimary"
+        android:textColorHint="@color/colorCinzaFonte"
         android:backgroundTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
