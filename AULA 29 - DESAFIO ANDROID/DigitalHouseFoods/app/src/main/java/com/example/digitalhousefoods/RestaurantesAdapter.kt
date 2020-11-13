@@ -1,5 +1,6 @@
 package com.example.digitalhousefoods
 
+import android.system.Os.bind
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -17,7 +18,8 @@ class RestaurantesAdapter(private val dataSet: List<Restaurante>, private val li
 
     //Quando chegar elemento novo, chamar para cada elemento
     override fun onBindViewHolder(holder: RestaurantesViewHolder, position: Int) {
-        holder.bind(dataSet[position].nome, dataSet[position].localizacao, dataSet[position].horario)
+        val item = dataSet[position]
+        holder.bind(item)
         holder.itemView.setOnClickListener { listener(dataSet[position]) }
     }
 }

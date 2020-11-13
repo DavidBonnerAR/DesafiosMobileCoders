@@ -27,7 +27,6 @@ class RestauranteDetalhes : AppCompatActivity() {
             Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
             Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
             Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")
-
         )
         val viewAdapter = RestauranteDetalhesAdapter(meusPratos){
             var intent = Intent(this@RestauranteDetalhes, PratoDetalhes::class.java)
