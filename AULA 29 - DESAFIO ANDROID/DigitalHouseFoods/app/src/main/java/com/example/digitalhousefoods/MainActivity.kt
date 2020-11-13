@@ -32,16 +32,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun fazerLogin() {
 
-        /* Get input text from material
-        val inputText = filledTextField.editText?.text.toString()
-
-        filledTextField.editText?.doOnTextChanged { inputText, _, _, _ ->
-            // Respond to input text change
-        }*/
-
         btnLogin.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
+            val email = editTextEmail.editText?.text.toString()
+            val senha = editTextSenha.editText?.text.toString()
+
+
+            if (email.isEmpty()) {
+                editTextEmail.editText?.error = getString(R.string.empty_field)
+
+            } else if(email.length <= 10) {
+                editTextEmail.editText?.error = getString(R.string.curto_demais)
+
+            } else if(senha.isEmpty()) {
+                editTextSenha.editText?.error = getString(R.string.empty_field)
+
+            }else if(senha.length < 8) {
+                editTextSenha.editText?.error = getString(R.string.curto_demais)
+
+            } else {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

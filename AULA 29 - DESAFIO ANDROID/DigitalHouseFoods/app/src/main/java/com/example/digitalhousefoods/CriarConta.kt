@@ -32,9 +32,40 @@ class CriarConta : AppCompatActivity() {
     }
     private fun registrarConta() {
         btnSignUp.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-            finish()
+
+            val nome = editTextCriarNome.editText?.text.toString()
+            val email = editTextCriarEmail.editText?.text.toString()
+            val senha = editTextCriarSenha.editText?.text.toString()
+            val senhaRepetida = editTextCriarSenhaRepetir.editText?.text.toString()
+
+
+            if (nome.isEmpty()) {
+                editTextCriarNome.editText?.error = getString(R.string.empty_field)
+
+            }else if(nome.length < 5) {
+                editTextCriarNome.editText?.error = getString(R.string.curto_demais)
+
+            } else if(email.isEmpty()) {
+                editTextCriarEmail.editText?.error = getString(R.string.empty_field)
+
+            }else if(email.length <= 10) {
+                editTextCriarEmail.editText?.error = getString(R.string.curto_demais)
+
+            }else if(senha.isEmpty() || senha.length < 8) {
+                editTextCriarSenha.editText?.error = getString(R.string.empty_field)
+
+            }else if(senha.length < 8) {
+                editTextCriarSenha.editText?.error = getString(R.string.curto_demais)
+
+            }else if(!senha.equals(senhaRepetida)) {
+                editTextCriarSenhaRepetir.editText?.error = getString(R.string.senhas_diferentes)
+
+            } else {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+
         }
     }
 
