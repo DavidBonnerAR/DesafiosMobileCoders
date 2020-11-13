@@ -8,5 +8,6 @@
     <color name="colorCinzabtn">#8492A6</color>
     <color name="colorCinzaFundo">#DDDDDD</color>
     <color name="colorCinzaFonte">#8492A6</color>
+    <color name="colorCinzaLinha">#C0CCDA</color>
     <color name="colorPretoFonte">#1F2D3D</color>
 </resources>
