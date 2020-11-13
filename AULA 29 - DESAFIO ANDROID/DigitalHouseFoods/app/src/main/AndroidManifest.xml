@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PratoDetalhes"></activity>
-        <activity android:name=".RestauranteDetalhes" />
+        <activity android:name=".PratoDetalhes" android:theme="@style/AppThemeSplashScreen"></activity>
+        <activity android:name=".RestauranteDetalhes" android:theme="@style/AppThemeSplashScreen"/>
         <activity android:name=".HomeActivity" />
         <activity android:name=".CriarConta" />
         <activity
