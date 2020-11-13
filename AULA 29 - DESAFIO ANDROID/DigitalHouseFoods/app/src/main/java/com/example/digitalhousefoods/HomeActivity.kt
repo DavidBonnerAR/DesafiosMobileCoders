@@ -6,6 +6,7 @@ import android.graphics.drawable.Icon
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log.i
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.core.content.res.ResourcesCompat
@@ -19,13 +20,16 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val myImage = R.mipmap.splash_foreground
+        val fotoRestaurante1 = R.mipmap.splash
+        val fotoRestaurante2 = R.mipmap.splash
+        val fotoRestaurante3 = R.mipmap.splash
+        val fotoRestaurante4 = R.mipmap.splash
 
         val meusRestaurantes = arrayListOf(
-            Restaurante("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", R.mipmap.splash_foreground),
-            Restaurante("Aoyama - Moema","Alameda dos Arapanés, 532 - Moema","Fecha às 00:00", R.mipmap.splash),
-            Restaurante("Outback - Moema","Av. Moaci, 187, 187 - Moema, São Paulo","Fecha às 00:00", myImage),
-            Restaurante("Sí Señor!","Alameda Jauaperi, 626 - Moema","Fecha às 01:00", myImage)
+            Restaurante("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00", fotoRestaurante1),
+            Restaurante("Aoyama - Moema","Alameda dos Arapanés, 532 - Moema","Fecha às 00:00", fotoRestaurante2),
+            Restaurante("Outback - Moema","Av. Moaci, 187, 187 - Moema, São Paulo","Fecha às 00:00", fotoRestaurante3),
+            Restaurante("Sí Señor!","Alameda Jauaperi, 626 - Moema","Fecha às 01:00", fotoRestaurante4)
         )
         val viewAdapter = RestaurantesAdapter(meusRestaurantes){
             var intent = Intent(this@HomeActivity, RestauranteDetalhes::class.java)

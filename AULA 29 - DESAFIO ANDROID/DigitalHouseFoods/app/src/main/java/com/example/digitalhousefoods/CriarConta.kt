@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
+import android.view.Window
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.activity_criar_conta.*
@@ -17,17 +19,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 class CriarConta : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_criar_conta)
 
-        val actionBar = getSupportActionBar()
-        actionBar?.title =  "REGISTER"
-
+        findViewById<ImageView>(R.id.imgViewBackRestaurante).setOnClickListener {
+            onBackPressed()
+        }
         registrarConta()
-
-
-
-
-
 
     }
     private fun registrarConta() {

@@ -8,11 +8,28 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgViewBackRestaurante2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+    </Toolbar>
+
     <ImageView
         android:id="@+id/imgPratoDetalhes"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/splash"
+        android:scaleX="6"
         />
 
     <TextView

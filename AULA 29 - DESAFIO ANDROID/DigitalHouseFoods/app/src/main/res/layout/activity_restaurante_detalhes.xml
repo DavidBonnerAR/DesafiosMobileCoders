@@ -9,11 +9,27 @@
     android:padding="10dp"
     android:background="@color/colorWhite">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgViewBackRestaurante3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    </Toolbar>
+
     <ImageView
         android:id="@+id/imgRestauranteDetalhes"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/splash"
+        android:scaleX="6"
         />
 
     <TextView
