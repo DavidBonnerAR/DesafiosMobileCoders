@@ -10,6 +10,8 @@ class PratoDetalhes : AppCompatActivity() {
         setContentView(R.layout.activity_prato_detalhes)
 
         val nome = intent.getStringExtra("NOMEPRATO")
+        val descricao = intent.getStringExtra("DESCRICAOPRATO")
         findViewById<TextView>(R.id.txtPratoNomeDetalhes).text = nome
+        findViewById<TextView>(R.id.txtPratoDescricaoDetalhes).text = descricao
     }
 }

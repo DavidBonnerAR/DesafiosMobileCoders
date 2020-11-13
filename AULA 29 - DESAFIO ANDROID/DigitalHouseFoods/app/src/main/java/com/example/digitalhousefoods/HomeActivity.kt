@@ -30,8 +30,6 @@ class HomeActivity : AppCompatActivity() {
             setHasFixedSize(true)
             layoutManager = viewManager
             adapter = viewAdapter
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
         }
     }
 }

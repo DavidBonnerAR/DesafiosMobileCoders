@@ -19,7 +19,15 @@
         android:id="@+id/txtRestauranteNomeDetalhes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome Restaurante"/>
+        android:text="Nome Restaurante"
+        android:textSize="36dp"/>
+
+    <TextView
+        android:id="@+id/txtRestauranteNomeDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pratos Principais"
+        android:textSize="36dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaPratos"

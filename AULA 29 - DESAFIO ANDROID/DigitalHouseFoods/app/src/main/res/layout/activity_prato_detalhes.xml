@@ -21,4 +21,14 @@
         android:layout_height="wrap_content"
         android:text="Nome Restaurante"/>
 
+    <TextView
+        android:id="@+id/txtPratoDescricaoDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do prato"
+        android:textColor="@color/colorCinzaFonte"
+        android:textSize="24dp"
+        android:ellipsize="end"
+        android:maxLines="10"/>
+
 </LinearLayout>

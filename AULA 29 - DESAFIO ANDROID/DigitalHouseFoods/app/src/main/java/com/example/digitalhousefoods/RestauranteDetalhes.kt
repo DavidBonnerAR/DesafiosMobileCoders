@@ -17,20 +17,22 @@ class RestauranteDetalhes : AppCompatActivity() {
         findViewById<TextView>(R.id.txtRestauranteNomeDetalhes).text = nome
 
         val meusPratos = arrayListOf(
-            Prato("Xtudo"),
-            Prato("XBurguer"),
-            Prato("Xbacon"),
-            Prato("Xsalada"),
-            Prato("Xsalada"),
-            Prato("Xsalada"),
-            Prato("Xsalada"),
-            Prato("Xsalada"),
-            Prato("Xsalada"),
-            Prato("Xsalada")
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."),
+            Prato("Salada com molho Gengibre ","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")
+
         )
         val viewAdapter = RestauranteDetalhesAdapter(meusPratos){
             var intent = Intent(this@RestauranteDetalhes, PratoDetalhes::class.java)
             intent.putExtra("NOMEPRATO", it.nome)
+            intent.putExtra("DESCRICAOPRATO", it.descricao)
             startActivity(intent)
         }
         val viewManager = GridLayoutManager(this, 2)
@@ -40,8 +42,6 @@ class RestauranteDetalhes : AppCompatActivity() {
             setHasFixedSize(true)
             layoutManager = viewManager
             adapter = viewAdapter
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
         }
     }
 }
