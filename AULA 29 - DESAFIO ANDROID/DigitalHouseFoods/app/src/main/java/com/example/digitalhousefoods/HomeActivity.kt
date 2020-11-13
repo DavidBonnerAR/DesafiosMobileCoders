@@ -13,10 +13,10 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val meusRestaurantes = arrayListOf(
-            Restaurante("Corujão Lanches"),
-            Restaurante("Regis Lanches"),
-            Restaurante("Xerifes Burguer"),
-            Restaurante("Cabana do Sol")
+            Restaurante("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "Fecha às 22:00"),
+            Restaurante("Aoyama - Moema","Alameda dos Arapanés, 532 - Moema","Fecha às 00:00"),
+            Restaurante("Outback - Moema","Av. Moaci, 187, 187 - Moema, São Paulo","Fecha às 00:00"),
+            Restaurante("Sí Señor!","Alameda Jauaperi, 626 - Moema","Fecha às 01:00")
         )
         val viewAdapter = RestaurantesAdapter(meusRestaurantes){
             var intent = Intent(this@HomeActivity, RestauranteDetalhes::class.java)

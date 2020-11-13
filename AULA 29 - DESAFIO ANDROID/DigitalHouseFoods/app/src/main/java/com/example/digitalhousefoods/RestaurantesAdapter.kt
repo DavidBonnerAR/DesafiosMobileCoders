@@ -17,7 +17,7 @@ class RestaurantesAdapter(private val dataSet: List<Restaurante>, private val li
 
     //Quando chegar elemento novo, chamar para cada elemento
     override fun onBindViewHolder(holder: RestaurantesViewHolder, position: Int) {
-        holder.bind(dataSet[position].nome)
+        holder.bind(dataSet[position].nome, dataSet[position].localizacao, dataSet[position].horario)
         holder.itemView.setOnClickListener { listener(dataSet[position]) }
     }
 }
