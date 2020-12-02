@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    app:startDestination="@id/telaLoginFragment">
+
+    <fragment
+        android:id="@+id/telaLoginFragment"
+        android:name="com.example.myapplication.login.logar.TelaLoginFragment"
+        android:label="fragment_tela_login"
+        tools:layout="@layout/fragment_tela_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_telaCriarContaFragment"
+            app:destination="@id/telaCriarContaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaCriarContaFragment"
+        android:name="com.example.myapplication.login.registrar.TelaCriarContaFragment"
+        android:label="fragment_tela_criar_conta"
+        tools:layout="@layout/fragment_tela_criar_conta" >
+        <action
+            android:id="@+id/action_telaCriarContaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.myapplication.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_detalhesQuadrinhosFragment"
+            app:destination="@id/detalhesQuadrinhoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalhesQuadrinhoFragment"
+        android:name="com.example.myapplication.detalhesquadrinhos.DetalhesQuadrinhoFragment"
+        android:label="fragment_detalhes_quadrinho"
+        tools:layout="@layout/fragment_detalhes_quadrinho" />
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EA2427</color>
+    <color name="colorPrimaryDark">#BB1C1F</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#EFF2F5</color>
+    <color name="colorAzulEscuro">#00162C</color>
+
+
+    <color name="colorOrange">#FF5252</color>
+    <color name="colorCinzabtn">#8492A6</color>
+    <color name="colorCinzaFundo">#DDDDDD</color>
+    <color name="colorCinzaFonte">#8492A6</color>
+    <color name="colorCinzaLinha">#C0CCDA</color>
+    <color name="colorPretoFonte">#1F2D3D</color>
+</resources>
