@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".view.LoginActivity"
     android:background="@drawable/kratos">
 
-
     <com.google.android.material.card.MaterialCardView
-        android:background="@color/colorBrancoFudno"
+        android:background="@color/colorBrancoFundo"
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,11 +36,11 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextEmailLogin"
+                    android:id="@+id/editTextSearchGames"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:backgroundTint="@color/colorBrancoFudno"
+                    android:backgroundTint="@color/colorBrancoFundo"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:backgroundTint="@color/colorBrancoFudno"
+                    android:backgroundTint="@color/colorBrancoFundo"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>

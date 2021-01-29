@@ -5,7 +5,8 @@
     <color name="colorPrimary">#009688</color>
     <color name="colorVermelhoBotao">#FF5252</color>
     <color name="colorAzulBotao">#00A6FF</color>
-    <color name="colorCinzaFundo">#C0CCDA</color>
+    <color name="colorCinzaFundo">#DDDDDD</color>
     <color name="colorPretoFonte">#1F2D3D</color>
-    <color name="colorBrancoFudno">#ffff</color>
+    <color name="colorBrancoFundo">#ffff</color>
+    <color name="colorCinzaFonte">#8492A6</color>
 </resources>
