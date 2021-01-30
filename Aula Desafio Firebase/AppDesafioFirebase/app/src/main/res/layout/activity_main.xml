@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity"
+    tools:context=".view.listajogosview.MainActivity"
     android:background="@color/colorCinzaFundo"
     >
 
@@ -29,6 +29,17 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dim_10_dp"
+        android:layout_marginTop="@dimen/dim_70_dp"
+        android:layout_marginEnd="@dimen/dim_10_dp"
+        app:layout_constraintEnd_toEndOf="@id/txtSearchGames"
+        app:layout_constraintStart_toStartOf="@id/txtSearchGames"
+        app:layout_constraintTop_toBottomOf="@id/txtSearchGames">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaJogos"
         android:layout_width="match_parent"
@@ -36,6 +47,8 @@
         tools:listitem="@layout/item_lista"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtSearchGames"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAdicionarJogo"

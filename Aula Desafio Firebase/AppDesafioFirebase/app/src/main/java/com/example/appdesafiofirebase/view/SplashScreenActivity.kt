@@ -9,8 +9,9 @@ import android.os.Looper
 import android.view.WindowInsets
 import android.view.WindowManager
 import com.example.appdesafiofirebase.R
+import com.example.appdesafiofirebase.view.loginview.LoginActivity
 
-const val DURACAO_DO_SPLASH = 1000L // L de Long
+const val DURACAO_DO_SPLASH = 0L // L de Long
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

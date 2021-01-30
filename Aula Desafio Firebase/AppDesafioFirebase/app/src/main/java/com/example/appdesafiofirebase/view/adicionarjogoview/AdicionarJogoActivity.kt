@@ -1,4 +1,4 @@
-package com.example.appdesafiofirebase.view
+package com.example.appdesafiofirebase.view.adicionarjogoview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

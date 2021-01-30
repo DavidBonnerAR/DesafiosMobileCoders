@@ -1,4 +1,4 @@
-package com.example.appdesafiofirebase.view
+package com.example.appdesafiofirebase.view.createaccountview
 
 import android.content.Context
 import android.content.Intent
@@ -10,30 +10,22 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import com.example.appdesafiofirebase.R
-import kotlinx.android.synthetic.main.activity_login.*
+import com.example.appdesafiofirebase.view.loginview.LoginActivity
+import kotlinx.android.synthetic.main.activity_create_account.*
 
-class LoginActivity : AppCompatActivity() {
+class CreateAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_create_account)
 
         criarConta()
-        logar()
-
-    }
-
-    private fun logar() {
-        btnLogin.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
     }
 
     private fun criarConta() {
-        btnCreateAccount.setOnClickListener {
-            val intent = Intent(this, CreateAccountActivity::class.java)
+        btnCreateAccountCreate.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.AdicionarJogoActivity"/>
-        <activity android:name=".view.DetalhesJogoActivity" />
+        <activity android:name=".view.salvarjogoview.SalvarJogoActivity"></activity>
+        <activity android:name=".view.adicionarjogoview.AdicionarJogoActivity" />
+        <activity android:name=".view.detalhesjogoview.DetalhesJogoActivity" />
         <activity android:name=".view.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CreateAccountActivity" />
-        <activity android:name=".view.LoginActivity" />
-        <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.createaccountview.CreateAccountActivity" />
+        <activity android:name=".view.loginview.LoginActivity" />
+        <activity android:name=".view.listajogosview.MainActivity" />
     </application>
 
 </manifest>
